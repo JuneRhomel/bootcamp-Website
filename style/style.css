@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.whyUs {
+  padding: 8vw;
+}
+.whyUs h2 {
+  color: #000;
+  font-weight: 700;
+  font-size: 2.5em;
+  font-family: "Roboto Serif", serif;
+  margin-bottom: 0.7em;
+}
+.whyUs h2 span {
+  color: #fff;
+  background: #003381;
+  padding: 0 0.4em;
+}
+.whyUs > p {
+  font-size: 1.1em;
+  width: 27em;
+  margin: auto;
+}
+.whyUs > div {
+  background: #003381;
+  color: #fff;
+  width: 70%;
+  height: 131px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+}
+.whyUs > div p {
+  font-size: 1.2em;
+}
+.whyUs > div p strong {
+  font-size: 1.3em;
+}
+.whyUs article {
+  margin: 50px 0 70px;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+.whyUs article div h3 {
+  color: #003381;
+  font-size: 18px;
+}
+.whyUs article div:nth-child(1) {
+  grid-area: 1/2/2/3;
+}
+.whyUs article div:nth-child(2) {
+  grid-area: 2/1/3/2;
+}
+.whyUs article div:nth-child(3) {
+  grid-area: 3/2/4/3;
+}
+.whyUs article div:nth-child(4) {
+  grid-area: 4/1/5/2;
+}
+.whyUs article div:nth-child(5) {
+  grid-area: 5/2/6/3;
+}
+.whyUs a {
+  color: #fff;
+  background: #003381;
+  padding: 13px 30px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.testimonial {
+  padding: 8vw;
+  padding-top: 0;
+}
+.testimonial h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 2.2em;
+  font-family: "Roboto Serif", serif;
+}
+.testimonial h2 span {
+  background: #003381;
+  color: #fff;
+  padding: 0 0.4em;
+}
+.testimonial .main-testimonial {
+  row-gap: 1em;
+}
+.testimonial .main-testimonial .box {
+  flex-direction: column;
+  gap: 1em;
+}
+.testimonial .main-testimonial .box figure {
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.testimonial .main-testimonial .box figure:hover {
+  filter: drop-shadow(6px 8px 13px rgba(74, 168, 255, 0.71));
+  transition: 0.3s all;
+}
+.testimonial .main-testimonial .box figure:hover img {
+  transform: scale(1.1);
+  transition: 0.3s all;
+}
+.testimonial .main-testimonial .box figure:hover .bg-text {
+  background: #003381;
+  color: #fff;
+  transition: 0.3s all;
+}
+.testimonial .main-testimonial .box figure .img-user {
+  position: absolute;
+  max-width: 10em;
+  right: 10px;
+  top: -20px;
+  z-index: 2;
+}
+.testimonial .main-testimonial .box figure .img-user img {
+  max-width: 7em;
+  transition: 0.3s ease-in-out;
+}
+.testimonial .main-testimonial .box figure .bg-text {
+  background: linear-gradient(138.85deg, rgba(74, 168, 255, 0.3835) 6.84%, rgba(10, 183, 221, 0.2015) 99.08%);
+  padding: 1.2em;
+  transition: 0.3s ease-in-out;
+}
+.testimonial .main-testimonial .box figure .bg-text h3 {
+  font-size: 1.7em;
+  font-weight: 700;
+}
+.testimonial .main-testimonial .box figure .bg-text p {
+  margin-top: 1.4em;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  grid-template: 1fr 1fr/1fr 1fr 1fr 2fr;
+  padding: 50px 8vw 30px;
+  background: #003381;
+  color: #fff;
+}
+footer h4 {
+  margin-bottom: 10px;
+}
+footer nav a {
+  color: #fff;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+footer nav a:last-child {
+  margin-bottom: 0;
+}
+footer form {
+  grid-area: 1/4/3/6;
+}
+footer form div {
+  gap: 20px;
+  margin-bottom: 10px;
+}
+footer form div input {
+  font-size: 16px;
+  padding: 8px;
+  font-family: Poppins, sans-serif;
+  width: 50%;
+}
+footer form textarea {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+footer form > input {
+  margin-left: auto;
+  padding: 8px 30px;
+  font-size: 16px;
+  color: #003381;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 1088px) {
+  .whyUs > div {
+    width: 100%;
+  }
+  footer {
+    grid-template: 1fr 2fr 0.5fr/1fr 1fr 1fr;
+    row-gap: 2em;
+  }
+  footer form {
+    grid-area: 2/1/3/4;
+  }
+  footer p {
+    grid-area: 3/1/4/4;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .testimonial .user-dif {
+    padding-top: 4em;
+  }
+  .testimonial .bg-text {
+    padding: 2em 3em 2em 2em;
+  }
+}
+@media (max-width: 688px) {
+  footer form div {
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer form div input {
+    width: 100%;
+  }
+}
+@media (max-width: 540px) {
+  .whyUs {
+    padding: 50px 20px;
+  }
+  .whyUs > p {
+    width: 100%;
+  }
+  .whyUs > div {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .whyUs > div p {
+    font-size: 0.9em;
+  }
+  .whyUs > div p strong {
+    font-size: 1.2em;
+  }
+  .whyUs article {
+    grid-template-columns: 1fr;
+    gap: 150px;
+  }
+  .whyUs article div:nth-child(1) {
+    grid-area: 1/1/2/2;
+    margin-top: 200px;
+  }
+  .whyUs article div:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+  .whyUs article div:nth-child(3) {
+    grid-area: 3/1/4/2;
+  }
+  .whyUs article div:nth-child(4) {
+    grid-area: 4/1/5/2;
+  }
+  .whyUs article div:nth-child(5) {
+    grid-area: 5/1/6/2;
+  }
+  .testimonial {
+    padding: 70px 20px 50px;
+  }
+  .testimonial .main-testimonial .box figure .bg-text h3 {
+    font-size: 1.2em;
+  }
+  .testimonial .main-testimonial .box figure .bg-text p {
+    font-size: 0.9em;
+  }
+  footer {
+    padding: 50px 20px 30px;
+    grid-template: 1fr 1fr 2fr 0.5fr/1fr 1fr;
+  }
+  footer form {
+    grid-area: 3/1/4/3;
+  }
+  footer p {
+    grid-area: 4/1/5/3;
+  }
+}
+@media (max-width: 385px) {
+  footer {
+    grid-template: 1fr 1fr 1fr 2fr 0.5fr/1fr;
+    row-gap: 15px;
+  }
+  footer form {
+    grid-area: 4/1/5/2;
+  }
+  footer form > input {
+    width: 100%;
+  }
+  footer p {
+    grid-area: 5/1/6/2;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
